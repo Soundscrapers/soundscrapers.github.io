@@ -8,9 +8,11 @@ document.body.appendChild(renderer.domElement);
 
 var scene = new THREE.Scene();
 
-var camera = new THREE.PerspectiveCamera(70, WIDTH/HEIGHT, 0.1, 10000);
-camera.position.z = 50;
-scene.add(camera);
+// var camera = new THREE.PerspectiveCamera(70, WIDTH/HEIGHT, 0.1, 10000);
+// camera.position.z = 50;
+// scene.add(camera);
+var camera = new THREE.OrthographicCamera( width / - 2, width / 2, height / 2, height / - 2, 1, 1000 );
+scene.add( camera );
 
 var boxGeometry = new THREE.BoxGeometry(10, 10, 10);
 var basicMaterial = new THREE.MeshBasicMaterial({color: 0x0095DD});
