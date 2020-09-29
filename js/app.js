@@ -8,8 +8,8 @@ var createScene = function () {
     // Create the scene space
     var scene = new BABYLON.Scene(engine);
 
-    // Add a camera to the scene and attach it to the canvas
-    var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(0,0,0), scene);
+    // Add a camera to the sceÒne and attach it to the canvas
+    var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(0,0,5), scene);
     camera.attachControl(canvas, true);
 
     // Add lights to the scene
@@ -26,12 +26,22 @@ var createScene = function () {
 
 var scene = createScene(); //Call the createScene function
 
+var initTone = function(){
+    
+}
+
 // Register a render loop to repeatedly render the scene
 engine.runRenderLoop(function () {
         scene.render();
+        toneUpdate();
 });
 
 // Watch for browser/canvas resize events
 window.addEventListener("resize", function () {
         engine.resize();
 });
+
+// Update the sound server
+var toneUpdate = function(){
+    console.log("echo");
+}
