@@ -43,5 +43,4 @@ window.addEventListener("resize", function () {
 
 // Update the sound server
 var toneUpdate = function(){
-    console.log("echo");
 }
