@@ -4,3 +4,33 @@
 	box-sizing: border-box;
 	font-family: 'Fira Sans', sans-serif;
 }
+
+.grid {
+	display: grid;
+	grid-gap: 16px;
+	padding: 16px;
+}
+
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 960px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1200px) {
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.grid .col {
+	background-color: pink;
+	margin-bottom: 16px;
+	padding: 16px;
+}
