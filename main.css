@@ -19,6 +19,11 @@ img {
   grid-auto-flow: dense;
 }
 
+.player {
+  grid-column: 1 / -1;
+  padding: 0px;
+}
+
 .container {
   display: grid;
   grid-gap: 0.2rem;
