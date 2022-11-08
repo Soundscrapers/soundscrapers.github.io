@@ -21,7 +21,6 @@ img {
 
 .player {
   grid-column: 1 / -1;
-  padding: 0px;
 }
 
 .container {
