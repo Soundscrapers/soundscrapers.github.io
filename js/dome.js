@@ -48,7 +48,7 @@ var createScene = async function () {
 		null, { loop: true, autoplay: true, spatialSound: true, maxDistance: 225 });
 	rain.setPosition(center);
 
-/*
+
     let advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("GUI", true, scene);
     let loadedGUI = await advancedTexture.parseFromSnippetAsync("5SK3PQ");
 
@@ -57,7 +57,7 @@ var createScene = async function () {
         window.innerWidth = 400;
         window.innerHeight = 300;
     });
-*/
+
 
 // GUI
 
