@@ -59,6 +59,22 @@ var createScene = async function () {
     });
 */
 
+// GUI
+   var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+
+   var button1 = BABYLON.GUI.Button.CreateSimpleButton("but1", "Resize Window");
+   button1.width = "150px"
+   button1.height = "40px";
+   button1.color = "white";
+   button1.cornerRadius = 20;
+   button1.background = "green";
+   button1.onPointerUpObservable.add(function() {
+     window.innerWidth = 400;
+     window.innerHeight = 300;
+   });
+   advancedTexture.addControl(button1);
+
+
     BABYLON.NodeMaterial.ParseFromSnippetAsync("#81NNDY#2", scene).then((nodeMaterial) => {
     dome.material = nodeMaterial;
     sphere.material = nodeMaterial;
@@ -70,7 +86,6 @@ var createScene = async function () {
 createScene().then(function(scene){
   engine.runRenderLoop(function () {
           scene.render();
-          console.log("scene loaded");
         });
   });
 
