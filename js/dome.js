@@ -68,7 +68,7 @@ var createScene = async function () {
     return scene;
 }
 
-//var scene = createScene(); //Call the createScene function
+var scene = createScene(); //Call the createScene function
 
 engine.runRenderLoop(function () {
                scene.render();
