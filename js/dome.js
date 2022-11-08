@@ -77,6 +77,3 @@ createScene().then(function(scene){
 
 
 //const scene = await createScene(); //Call the createScene function
-
-
-       });
