@@ -20,6 +20,11 @@ var createScene = function () {
     // var sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter:2}, scene);
     building = new Building(0,0,0,10,1, scene);
     building.material.wireframe = true;
+
+    var rain = new BABYLON.Sound("rain", "https://raw.githubusercontent.com/Soundscrapers/psychic-octo-palm-tree/main/rain.wav", scene,
+    null, { loop: true, autoplay: true, spatialSound: true, maxDistance: 225 });
+    rain.setPosition(center);
+    
     return scene;
 };
 /******* End of the create scene function ******/
