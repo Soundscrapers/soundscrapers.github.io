@@ -68,7 +68,7 @@ var createScene = async function () {
     return scene;
 }
 
-const scene = await createScene(); //Call the createScene function
+const scene = await async createScene(); //Call the createScene function
 
 engine.runRenderLoop(function () {
                scene.render();
