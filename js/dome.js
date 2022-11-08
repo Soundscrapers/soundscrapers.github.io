@@ -1,4 +1,6 @@
 //Dome test 11.7.22
+var canvas = document.getElementById("renderCanvas"); // Get the canvas element
+var engine = new BABYLON.Engine(canvas, true); // Generate the BABYLON 3D engine
 
 const center = new BABYLON.Vector3(-25,116,4);
 
