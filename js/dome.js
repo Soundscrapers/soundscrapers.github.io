@@ -68,8 +68,13 @@ var createScene = async function () {
     return scene;
 }
 
-const scene = await async createScene(); //Call the createScene function
+createScene().then(scene => {
+  engine.runRenderLoop(function () {
+                 scene.render();
+               });
+});
 
-engine.runRenderLoop(function () {
-               scene.render();
+//const scene = await createScene(); //Call the createScene function
+
+
        });
