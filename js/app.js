@@ -21,6 +21,20 @@ var createScene = function () {
     building = new Building(0,0,0,10,1, scene);
     building.material.wireframe = true;
 
+    var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+
+    var button1 = BABYLON.GUI.Button.CreateSimpleButton("but1", "Resize Window");
+    button1.width = "150px"
+    button1.height = "40px";
+    button1.color = "white";
+    button1.cornerRadius = 20;
+    button1.background = "green";
+    button1.onPointerUpObservable.add(function() {
+      window.innerWidth = 400;
+      window.innerHeight = 300;
+    });
+    advancedTexture.addControl(button1);
+
     return scene;
 };
 /******* End of the create scene function ******/
