@@ -21,6 +21,7 @@ img {
 
 .player {
   grid-column: 1 / -1;
+  min-height: 50%;
 }
 
 .container {
