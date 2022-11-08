@@ -27,7 +27,7 @@ var createScene = function () {
 var scene = createScene(); //Call the createScene function
 
 var initTone = function(){
-    
+
 }
 
 // Register a render loop to repeatedly render the scene
@@ -36,11 +36,11 @@ engine.runRenderLoop(function () {
         toneUpdate();
 });
 
-// Watch for browser/canvas resize events
+/* Watch for browser/canvas resize events
 window.addEventListener("resize", function () {
         engine.resize();
 });
-
+*/
 // Update the sound server
 var toneUpdate = function(){
 }
