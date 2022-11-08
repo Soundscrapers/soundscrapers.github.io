@@ -48,17 +48,16 @@ var createScene = async function () {
 		null, { loop: true, autoplay: true, spatialSound: true, maxDistance: 225 });
 	rain.setPosition(center);
 
-   /*
-    LOAD GUI
 
     let advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("GUI", true, scene);
     let loadedGUI = await advancedTexture.parseFromSnippetAsync("5SK3PQ");
 
     let buttonIn = advancedTexture.getControlByName("ButtonIn");
     buttonIn.onPointerClickObservable.add( function(){
-        buttonIn.isVisible = false;
+        window.innerWidth = 400;
+        window.innerHeight = 300;
     });
-*/
+
 
     BABYLON.NodeMaterial.ParseFromSnippetAsync("#81NNDY#2", scene).then((nodeMaterial) => {
     dome.material = nodeMaterial;
