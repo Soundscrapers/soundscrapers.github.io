@@ -6,6 +6,7 @@
   <title>Dome Grid</title>
 
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="nav.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 
   <style>
@@ -27,7 +28,22 @@
 
     <!-- CSS GRID CONTAINER -->
 <div class="container">
-  <nav>Navbar</nav>
+  <nav class="navbar">
+  <script src="js/nav.js"></script>
+  <div class="title">Vessel </div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+     <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>
   <div class="player">
     <canvas id="renderCanvas" touch-action="none"></canvas>
     <script src="js/dome.js"></script>
