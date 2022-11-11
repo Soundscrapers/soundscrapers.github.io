@@ -46,7 +46,7 @@ body {
   position: absolute;
   top: .75rem;
   right: 1rem;
-  display:none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
