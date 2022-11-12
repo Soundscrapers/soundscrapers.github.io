@@ -30,9 +30,34 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.fullwidth {
+.footer {
   grid-column: 1 / -1;
-  background: #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  color: #666666;
+}
+
+.footer .cr {
+  text-size: 0.4rem
+}
+
+.footer ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer li {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+  padding: 1rem;
+  display: block;
 }
 
 .navbar {
