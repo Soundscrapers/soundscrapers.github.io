@@ -4,39 +4,42 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Vessel</title>
-
-        <style>
-            html, body {
-                overflow: hidden;
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            #renderCanvas {
-                width: 100%;
-                height: 100%;
-                touch-action: none;
-            }
-        </style>
-
-        <script src="https://cdn.babylonjs.com/babylon.js"></script>
-          <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
-
+  <link rel="stylesheet" href="main.css" />
 
     </head>
 
    <body>
+     <video autoplay muted loop id="myVideo">
+       <source src="video/seoul1.mp4" type="video/mp4">
+     </video>
 
+     <!-- Optional: some overlay text to describe the video -->
+     <div class="content">
+       <h1>Heading</h1>
+       <p>Lorem ipsum...</p>
+       <!-- Use a button to pause/play the video with JavaScript -->
+       <button id="myBtn" onclick="myFunction()">Pause</button>
+     </div>
+     
+     <script>
+     // Get the video
+     var video = document.getElementById("myVideo");
 
+     // Get the button
+     var btn = document.getElementById("myBtn");
 
-    <canvas id="renderCanvas" touch-action="none"></canvas> <!-- touch-action="none" for best results from PEP -->
-    <script src="js/building.js"></script>
-    <script src = "js/app.js"></script>
-    <!--
- <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
-    -->
+     // Pause and play the video, and change the button text
+     function myFunction() {
+       if (video.paused) {
+         video.play();
+         btn.innerHTML = "Pause";
+       } else {
+         video.pause();
+         btn.innerHTML = "Play";
+       }
+     }
+     </script>
+
 
    </body>
 
