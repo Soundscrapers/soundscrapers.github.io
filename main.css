@@ -2,7 +2,7 @@ html,
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
-  position: fixed;
+/*  position: fixed;*/
   left: 0;
   top: 0;
   min-width: 100%;
@@ -12,7 +12,7 @@ html,
 
 /* Add some content at the bottom of the video/page */
 .content {
-  position: fixed;
+/*  position: fixed;*/
   top: 20%;
   background: rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
