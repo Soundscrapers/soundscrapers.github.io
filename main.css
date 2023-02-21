@@ -12,8 +12,9 @@ html,
 
 /* Add some content at the bottom of the video/page */
 .content {
-/*  position: fixed;*/
+  position: fixed;
   top: 20%;
+  left: 10%;
   background: rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
   width: 80%;
@@ -55,7 +56,7 @@ img {
 
 h1 {
   text-align: center;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 300;
 }
 
