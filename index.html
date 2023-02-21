@@ -57,7 +57,7 @@ Toggle
    <div class="img"><img src = "img/DIY-DOMESEQ3.jpg" alt="raising the dome"></div>
    <div class="img"><img src = "img/DIY-DOMESEQ4.jpg" alt="raising the dome"></div>
    <div class="footer">
-     <div class="cr">Copyright 2022 Nicolas Sowers</div>
+     <div class="cr">Copyright 2023 Nicolas Sowers</div>
      <ul>
      <li><a href="https://soundcloud.com/nicksowers"><img src= "img/Slogo100.png" width = 30% height=30%></a></li>
      <li><a href="https://www.instagram.com/vessel.fm/"><img src= "img/IGlogo100.png" width = 30% height=30%></a></li>
@@ -74,7 +74,7 @@ function fadeOutOnScroll(element) {
 	}
 
 	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-	var elementHeight = element.offsetHeight;
+	var elementHeight = element.offsetHeight * 1.5;
 	var scrollTop = document.documentElement.scrollTop;
 
 	var opacity = 1;
@@ -94,7 +94,7 @@ function scrollHandler() {
 
 window.addEventListener('scroll', scrollHandler);
 </script>
-<!--
+
      <script>
      // Get the video
      var video = document.getElementById("myVideo");
