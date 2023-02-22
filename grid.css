@@ -3,6 +3,7 @@ body {
   font-size: 1.2rem;
   color: white;
   padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -84,13 +85,13 @@ ul {
 
 .col_title--wrapper h2 {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .col_title--wrapper h3 {
   text-align: right;
   font-weight: 350;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-style: italic;
 }
 
@@ -106,7 +107,7 @@ ul {
 .proj_item {
   background-color: white;
   border-radius: .25rem;
-  box-shadow: 0 2px 0 rgba(111,111,111,.25);
+  box-shadow: 0 2px 0 rgba(111,111,111,.75);
   /*padding: .5rem;*/
 }
 
@@ -117,7 +118,10 @@ ul {
   padding: 0;
 }
 
-.proj_item p{
+.proj_text {
+  background-color: white;
+  border-radius: .25rem;
+  box-shadow: 0 2px 0 rgba(111,111,111,.75);
   color: #595959;
   padding: 0.25rem;
 }
