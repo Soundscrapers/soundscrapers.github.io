@@ -7,6 +7,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /* video + overlay styles */
@@ -34,7 +35,7 @@ ul {
 }
 
 .vid-overlay h1{
-  font-color: white;
+  text-align: center;
   font-size: 5rem;
   font-weight: 300;
 }
@@ -66,15 +67,14 @@ ul {
 }
 
 .col_title--wrapper h2 {
-  color: #17394d;
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 1.4rem;
 }
 
 .col_title--wrapper h3 {
-  color: #17394d;
+  text-align: right;
   font-weight: 350;
-  font-size: .9rem;
+  font-size: 1.4rem;
   font-style: italic;
 }
 
