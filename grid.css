@@ -30,14 +30,28 @@ ul {
   align-self: center;
   grid-column: 1;
   grid-row: 1;
-  background-color: rgba(0,0,0,0.3)
+  background-color: rgba(0,0,0,0.3);
   padding: 20px;
 }
 
-.vid-overlay h1{
+.vid-overlay h2{
   text-align: center;
   font-size: 5rem;
   font-weight: 300;
+}
+
+.title-overlay {
+  align-self: top;
+  grid-column: 1;
+  grid-row: 1;
+/*  background-color: rgba(0,0,0,0.3);*/
+  padding: 20px;
+}
+
+.title-overlay h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
 .wrapper {
