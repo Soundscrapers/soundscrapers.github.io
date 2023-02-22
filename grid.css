@@ -16,7 +16,7 @@ ul {
   display: grid;
   min-width: 800px;
   max-width: 100%;
-  min-height: 50%;
+  min-height: 600px;
   margin: 0;
 }
 
@@ -65,12 +65,13 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   padding: .25rem;
   align-items: center;
-  line-height: 0.7;
+
 }
 
 .col_title--wrapper h2 {
   font-weight: 700;
   font-size: 1.4rem;
+  line-height: 0.5;
 }
 
 .col_title--wrapper h3 {
@@ -78,6 +79,7 @@ ul {
   font-weight: 350;
   font-size: 1.4rem;
   font-style: italic;
+  line-height: 0.5;
 }
 
 /* project styles */
@@ -100,4 +102,5 @@ ul {
   display: block;
   width: 100%;
   margin-bottom: .25rem;
+  padding: 0;
 }
