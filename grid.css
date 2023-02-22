@@ -18,7 +18,7 @@ ul {
   margin: 0;
 }
 
-.vid-container video {
+.head-container video {
   grid-column: 1;
   grid-row: 1;
   min-height: 600px;
