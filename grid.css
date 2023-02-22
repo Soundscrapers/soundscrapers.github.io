@@ -21,9 +21,9 @@ ul {
 .head-container video {
   grid-column: 1;
   grid-row: 1;
-  min-height: 600px;
-  max-width: 100%
-  /*height: auto;*/
+  /*min-height: 600px;*/
+  max-width: 100%;
+  height: auto;
 }
 
 .vid-overlay {
@@ -63,7 +63,7 @@ ul {
 .col_title--wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: .25rem;
+  padding: 0;
   align-items: center;
 
 }
@@ -71,7 +71,6 @@ ul {
 .col_title--wrapper h2 {
   font-weight: 700;
   font-size: 1.4rem;
-  line-height: 0.5;
 }
 
 .col_title--wrapper h3 {
@@ -79,7 +78,6 @@ ul {
   font-weight: 350;
   font-size: 1.4rem;
   font-style: italic;
-  line-height: 0.5;
 }
 
 /* project styles */
