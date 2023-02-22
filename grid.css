@@ -22,7 +22,7 @@ ul {
   grid-column: 1;
   grid-row: 1;
   /*min-height: 600px;*/
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
