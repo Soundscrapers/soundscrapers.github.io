@@ -70,7 +70,7 @@ ul {
 
 .col_item {
   border-radius: .2rem;
-  background-color: #545454;
+  background-color: #ABABAB;
   padding: .5rem;
 }
 
@@ -84,13 +84,13 @@ ul {
 
 .col_title--wrapper h2 {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .col_title--wrapper h3 {
   text-align: right;
   font-weight: 350;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-style: italic;
 }
 
@@ -106,13 +106,17 @@ ul {
 .proj_item {
   background-color: white;
   border-radius: .25rem;
-  box-shadow: 0 1px 0 rgba(9,45,66,.25);
-  padding: .5rem;
+  box-shadow: 0 2px 0 rgba(111,111,111,.25);
+  /*padding: .5rem;*/
 }
 
 .proj_item img{
   display: block;
   width: 100%;
-  margin-bottom: .25rem;
+  /*margin-bottom: .25rem;*/
   padding: 0;
+}
+
+.proj_item p{
+  color: #595959;
 }
