@@ -11,6 +11,14 @@ ul {
   padding-left: 0;
 }
 
+a {
+  color: #1AC96F;
+}
+
+a hover{
+  color: #1AC9B4;
+}
+
 /* video + overlay styles */
 
 .head-container {
@@ -33,6 +41,7 @@ ul {
   grid-row: 1;
   background-color: rgba(0,0,0,0.3);
   padding: 20px;
+  margin: 2rem;
 }
 
 .vid-overlay h2{
@@ -115,7 +124,6 @@ ul {
   display: block;
   width: 100%;
   /*margin-bottom: .25rem;*/
-  padding: 0;
 }
 
 .proj_text {
@@ -124,4 +132,8 @@ ul {
   box-shadow: 0 2px 0 rgba(111,111,111,.75);
   color: #595959;
   padding: 0.25rem;
+}
+
+.proj_text img{
+  width: 50%;
 }
