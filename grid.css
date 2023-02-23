@@ -159,4 +159,5 @@ a:hover{
 .proj_text img{
   width: 30%;
   height: 30%;
+  display: inline;
 }
