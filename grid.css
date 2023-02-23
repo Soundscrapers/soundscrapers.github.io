@@ -15,7 +15,7 @@ a {
   color: #1AC96F;
 }
 
-a hover{
+a:hover{
   color: #1AC9B4;
 }
 
@@ -35,13 +35,19 @@ a hover{
   height: auto;
 }
 
+.head-container img {
+  grid-column: 1;
+  grid-row: 1;
+  min-width:100%;
+}
+
 .vid-overlay {
   align-self: center;
   grid-column: 1;
   grid-row: 1;
   background-color: rgba(0,0,0,0.3);
-  padding: 20px;
-  margin: 2rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 .vid-overlay h2{
@@ -50,18 +56,33 @@ a hover{
   font-weight: 300;
 }
 
+.img-overlay {
+  align-self: center;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 20rem;
+}
+
+.proj-overlay h2{
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
 .title-overlay {
   align-self: top;
   grid-column: 1;
   grid-row: 1;
 /*  background-color: rgba(0,0,0,0.3);*/
-  padding: 20px;
 }
 
 .title-overlay h1{
   text-align: center;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 1100;
 }
 
 .wrapper {
@@ -127,6 +148,7 @@ a hover{
 }
 
 .proj_text {
+  font-size: .8rem;
   background-color: white;
   border-radius: .25rem;
   box-shadow: 0 2px 0 rgba(111,111,111,.75);
@@ -135,5 +157,6 @@ a hover{
 }
 
 .proj_text img{
-  width: 50%;
+  width: 30%;
+  height: 30%;
 }
